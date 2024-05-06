@@ -12,28 +12,66 @@
     <link rel="icon" type="image/png" href="images/agujero negro.png">
     <link rel="stylesheet" href="../css/styles.css">
     <script defer src="../js/boca.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <style>
+        .navbar-nav .nav-link {
+            color: #fff;
+        }
+
+        @media screen and (max-width: 750px) {
+            .image-container img {
+                max-width: 100%;
+                height: auto;
+            }
+
+            .item {
+                flex-direction: column;
+            }
+        }
+    </style>
 </head>
 
 <body>
-    <nav class="navbar">
-        <ul class="nav-list">
-            <li><a href="../index.html">inicio</a>
-            <li><a href="../html/galaxias.html">Galaxias</a>
-            <li><a href="../html/estrellas.html">Estrellas</a>
-            <li><a href="#">Planetas</a>
-            <li><a href="../html/BigBang.html">BigBang</a>
-        </ul>
-    </nav>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <a class="navbar-brand" href="#"><img src="../images/logo-navbar.png" alt="logo de la barra de navegacion"
+                    class="img-logo"></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="../index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="estrellas.html">Estrellas</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="galaxias.html">Galaxias</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Planetas</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="arsat.html">Bigbang</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
     <div class="image-container">
         <img src="../images/planetTitle.png" alt="Mi Imagen" id="poster" class="hover-3d">
     </div>
     <div class="gridPlanet">
-        <div class="item recuadro-1p"><img src="../images/planeta marte.gif"></div>
         <div class="item recuadro-2p">Un planeta es un objeto astronómico que orbita una estrella y que es lo
             suficientemente masivo como
             para ser redondeado por su propia gravedad, pero no lo suficientemente masivo como para causar
-            fusión termonuclear</div>
-        <div class="item recuadro-3p"><img src="../images/planeta1.jpg"></div>
+            fusión termonuclear
+            <div class=" recuadro-1p"><img src="../images/planeta-marte.gif"></div>
+        </div>
         <div class="item recuadro-4p">Variedad de Planetas: Los planetas son cuerpos celestes que orbitan
             alrededor de estrellas y no emiten luz propia, sino que reflejan la luz de su estrella.
             Aunque hemos explorado y estudiado principalmente los planetas de nuestro sistema solar, se cree que
@@ -41,23 +79,33 @@
             Diversidad de Tamaños y Composiciones: Los planetas pueden variar en
             tamaño desde planetas enanos y súper Tierras hasta gigantes gaseosos como Júpiter.
             Sus composiciones también difieren ampliamente, algunos son predominantemente rocosos como la Tierra
-            y Marte, mientras que otros son en su mayoría gaseosos, como Júpiter y Saturno.</div>
-        <div class="item recuadro-5p"><img src="../images/zona habitable.jpg"></div>
+            y Marte, mientras que otros son en su mayoría gaseosos, como Júpiter y Saturno.
+            <div class=" recuadro-3p"><img src="../images/planeta1.jpg"></div>
+        </div>
         <div class="item recuadro-6p">Zona Habitable: Algunos planetas están en la "zona habitable" alrededor
             de sus estrellas, donde las condiciones podrían ser adecuadas para la existencia de agua líquida en
             la superficie, un factor clave para la vida tal como la conocemos. Esta zona depende de la estrella
-            en cuestión y de su luminosidad.</div>
-        <div class="item recuadro-7p"><img src="../images/formaicon.jpg"></div>
+            en cuestión y de su luminosidad.
+            <div class="recuadro-5p"><img src="../images/zona habitable.jpg"></div>
+        </div>
         <div class="item recuadro-8p">Formación Planetaria: La formación de planetas suele ocurrir en discos
             de gas y polvo alrededor de estrellas jóvenes. Los planetas se forman a medida que los materiales en
             estos discos se acumulan en núcleos sólidos que luego pueden atraer más material para crecer en
-            tamaño.</div>
-        <div class="item recuadro-9p"><img src="../images/detecion.jpg"></div>
+            tamaño.
+            <div class=" recuadro-7p"><img src="../images/formaicon.jpg"></div>
+        </div>
         <div class="item recuadro-10p">Detección de Exoplanetas: La detección de exoplanetas se realiza
             principalmente a través de métodos como el tránsito (cuando un planeta pasa frente a su estrella,
             disminuyendo temporalmente su brillo) y la velocidad radial (detectando el movimiento de una
-            estrella debido a la atracción gravitacional de un planeta).</div>
+            estrella debido a la atracción gravitacional de un planeta).
+            <div class=" recuadro-9p"><img src="../images/detecion.jpg"></div>
+        </div>
     </div>
+
+    <footer>todos los derechos reservados | mallojulian04@gmail.com</footer>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
 </body>
 
 </html>

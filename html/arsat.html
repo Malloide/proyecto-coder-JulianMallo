@@ -12,42 +12,88 @@
     <link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans&display=swap" rel="stylesheet">
     <link rel="icon" href="images/agujero negro.png" type="image/png">
     <script defer src="../js/boca.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <style>
+        .navbar-nav .nav-link {
+            color: #fff;
+        }
+
+        @media screen and (max-width: 750px) {
+            .image-container img {
+                max-width: 100%;
+                height: auto;
+            }
+
+            .item {
+                flex-direction: column;
+            }
+        }
+    </style>
 </head>
 
 <body>
-    <nav class="navbar">
-        <ul class="nav-list">
-            <li><a href="../index.html">inicio</a>
-            <li><a href="../html/galaxias.html">Galaxias</a>
-            <li><a href="../html/estrellas.html">Estrellas</a>
-            <li><a href="../html/planetas.html">Planetas</a>
-            <li><a href="#">Bigbang</a>
-        </ul>
-    </nav>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <a class="navbar-brand" href="#"><img src="../images/logo-navbar.png" alt="logo de la barra de navegacion"
+                    class="img-logo"></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="../index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="estrellas.html">Estrellas</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="galaxias.html">Galaxias</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="planetas.html">Planetas</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Bigbang</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
     <div class="image-container">
         <img src="../images/bigbangTitle.png" alt="Mi Imagen" id="poster" class="hover-3d">
     </div>
     <div class="gridBigbang">
-        <div class="item recuadro-1b"><img src="../images/origen.jpg"></div>
         <div class="item recuadro-2b">Origen del Universo:
             El Big Bang es el modelo cosmológico que explica cómo el universo se originó a partir de una
             singularidad, un estado de densidad y temperatura infinitas, hace aproximadamente 13.8 mil
             millones de años.
             En ese momento inicial, toda la materia, energía y espacio estaban concentrados en un punto
-            extremadamente pequeño y caliente</div>
-        <div class="item recuadro-3b"><img src="../images/expancion.jpg"></div>
+            extremadamente pequeño y caliente
+            <div class=" recuadro-1b"><img src="../images/origen.jpg"></div>
+        </div>
         <div class="item recuadro-4b">Expansión del Universo:
             Según el modelo del Big Bang, el universo comenzó a expandirse desde ese punto extremadamente
             denso y caliente.
             La evidencia de la expansión proviene de observaciones como el corrimiento al rojo de la luz de
-            galaxias distantes, lo que indica que están alejándose de nosotros.</div>
-        <div class="item recuadro-5b"><img src="../images/evolucion.jpg"></div>
+            galaxias distantes, lo que indica que están alejándose de nosotros.
+            <div class=" recuadro-3b"><img src="../images/expancion.jpg"></div>
+        </div>
         <div class="item recuadro-6b">Evolución del Universo:
             A medida que el universo se expandía y se enfriaba, los átomos de hidrógeno y helio se agruparon
             bajo la influencia de la gravedad para formar las primeras estrellas y galaxias.
             Estas estructuras cósmicas posteriores evolucionaron con el tiempo, formando la red cósmica que
-            vemos hoy en día.</div>
+            vemos hoy en día.
+            <div class=" recuadro-5b"><img src="../images/evolucion.jpg"></div>
+        </div>
     </div>
+
+    <footer>todos los derechos reservados | mallojulian04@gmail.com</footer>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
 </body>
 
 </html>
