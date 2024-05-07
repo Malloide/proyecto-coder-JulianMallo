@@ -1,0 +1,217 @@
+@import "utilidades/grid";
+@import "utilidades/item";
+@import "utilidades/background";
+@import "utilidades/tipografia";
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Pixelify Sans', sans-serif;
+    font-size: large;
+  }
+  
+  body {
+    background: rgb(25, 28, 60);
+    background: linear-gradient(0deg, rgba(25, 28, 60, 1) 0%, rgba(0, 0, 0, 1) 100%);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+  }
+  
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-position-x: center;
+    background-size: cover;
+    animation: animateBg 50s linear infinite;
+  }
+  
+  .image {
+    max-width: 100%;
+    max-height: 100%;
+  }
+  
+  .title {
+    text-align: center;
+    font-size: 100px;
+  
+    &.title1 {
+      color: aliceblue;
+      background-color: transparent;
+    }
+  }
+  
+  .container1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+    background-color: transparent;
+  }
+  
+  .navbar {
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 999;
+    padding: 10px 0;
+    text-align: center;
+  
+    .nav-list {
+      list-style: none;
+      display: flex;
+      flex-wrap: nowrap;
+      justify-content: center;
+  
+      li {
+        margin: 0 15px;
+        flex-shrink: 0;
+  
+        a {
+          text-decoration: none;
+          color: #fff;
+  
+          &:hover {
+            text-decoration: dashed;
+          }
+        }
+      }
+  
+      // Media query para móviles
+      @media (max-width: 750px) {
+        justify-content: center;
+  
+        li {
+          margin: 0 5px;
+  
+          a {
+            font-size: 14px;
+          }
+        }
+      }
+    }
+  }
+  
+  .grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    gap: 10px;
+    width: 100vw;
+    height: auto;
+    margin: 0;
+    border-radius: 1.5rem;
+    padding: 10px;
+  }
+  
+  img {
+    width: 60%;
+    border-radius: 20px;
+  }
+  
+  .item {
+    background-color: #3498db00;
+    color: white;
+    border: 0.3rem solid #ccc;
+    padding: 20px;
+    text-align: center;
+    border-radius: 1.5rem;
+    transition: transform 0.5s;
+    background-color: rgba(29, 45, 68, 0.7);
+  
+    &:hover {
+      transform: translateY(-10px);
+    }
+  }
+  
+  .recuadro-1, .recuadro-2, .recuadro-3, .recuadro-4 {
+    grid-column: span 3;
+    transition: transform 0.5s;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(29, 45, 68, 0.7);
+    display: flex;
+  
+    &:hover {
+      transform: translateY(-10px);
+    }
+  }
+  
+  .imagen1 {
+    padding: 20px;
+    text-align: center;
+    border-radius: 1.5rem;
+    transition: transform 0.5s;
+  
+    img {
+      width: 100%;
+      object-fit: cover;
+      align-items: center;
+    }
+  
+    &:hover {
+      transform: translateY(-10px);
+    }
+  }
+  
+  #poster {
+    height: 12.5rem;
+    width: 50rem;
+    transition: box-shadow 0.1s transform 0.1s;
+    background: no-repeat center;
+    background-size: cover;
+  
+    &:hover {
+      box-shadow: 0px 0px 50px rgba(0, 0, 0, 1);
+      transform: scale(1.05);
+    }
+  }
+  
+  .image-container {
+    justify-content: center;
+    width: 100%;
+    display: flex;
+    margin-top: 3.125rem;
+  
+    img {
+      max-width: 100%;
+      height: auto;
+    }
+  }
+  
+  html,
+  body {
+    overflow-x: hidden;
+  }
+  
+  .gridGalaxy, .gridStar, .gridPlanet, .gridBigbang {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+  
+  .recuadro-1g, .recuadro-2g, .recuadro-3g, .recuadro-5g, .recuadro-7g, .recuadro-9g, .recuadro-11g,
+  .recuadro-1e, .recuadro-2e, .recuadro-3e, .recuadro-4e, .recuadro-5e,
+  .recuadro-1p, .recuadro-2p, .recuadro-3p, .recuadro-4p, .recuadro-5p, .recuadro-6p, .recuadro-7p, .recuadro-8p, .recuadro-9p, .recuadro-10p,
+  .recuadro-1b, .recuadro-2b, .recuadro-3b, .recuadro-4b, .recuadro-5b, .recuadro-6b {
+    background-color: rgba(29, 45, 68, 0.7);
+    display: flex;
+    align-items: center;
+    padding: 20px;
+  
+    img {
+      width: 100%;
+      object-fit: cover;
+      align-items: center;
+    }
+  }
+  

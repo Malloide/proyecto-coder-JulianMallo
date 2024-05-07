@@ -1,0 +1,76 @@
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    gap: 10px;
+    width: 100vw;
+    height: auto;
+    margin: 0;
+    border-radius: 1.5rem;
+    padding: 10px;
+  }
+  
+  .gridGalaxy,
+  .gridStar,
+  .gridPlanet,
+  .gridBigbang {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+  
+  .recuadro-1,
+  .recuadro-2,
+  .recuadro-3,
+  .recuadro-4 {
+    grid-column: span 3;
+    transition: transform 0.5s;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(29, 45, 68, 0.7);
+    display: flex;
+  
+    &:hover {
+      transform: translateY(-10px);
+    }
+  }
+  
+  .recuadro-1g,
+  .recuadro-2g,
+  .recuadro-3g,
+  .recuadro-5g,
+  .recuadro-7g,
+  .recuadro-9g,
+  .recuadro-11g,
+  .recuadro-1e,
+  .recuadro-2e,
+  .recuadro-3e,
+  .recuadro-4e,
+  .recuadro-5e,
+  .recuadro-1p,
+  .recuadro-2p,
+  .recuadro-3p,
+  .recuadro-4p,
+  .recuadro-5p,
+  .recuadro-6p,
+  .recuadro-7p,
+  .recuadro-8p,
+  .recuadro-9p,
+  .recuadro-10p,
+  .recuadro-1b,
+  .recuadro-2b,
+  .recuadro-3b,
+  .recuadro-4b,
+  .recuadro-5b,
+  .recuadro-6b {
+    background-color: rgba(29, 45, 68, 0.7);
+    display: flex;
+    align-items: center;
+    padding: 20px;
+  
+    img {
+      width: 100%;
+      object-fit: cover;
+      align-items: center;
+    }
+  }
+  
