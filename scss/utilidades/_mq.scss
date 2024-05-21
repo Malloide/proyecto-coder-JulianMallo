@@ -1,0 +1,18 @@
+@media (max-width: 750px) {
+  .nav-list {
+    justify-content: center;
+
+    li {
+      margin: 0 5px;
+    }
+
+    a {
+      font-size: 14px;
+    }
+  }
+
+  .image-container img {
+    max-width: 100%;
+    height: auto;
+  }
+}

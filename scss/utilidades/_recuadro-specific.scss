@@ -1,0 +1,124 @@
+
+
+@mixin recuadro-styles {
+  grid-column: 1 / span 3;
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  background-color: rgba(29, 45, 68, 0.7);
+}
+
+.recuadro-1e {
+  img {
+    width: 100%;
+    object-fit: cover;
+    align-items: center;
+    background-color: rgba(29, 45, 68, 0.7);
+  }
+}
+
+.recuadro-2e,
+.recuadro-4e,
+.recuadro-5e {
+  @include recuadro-styles;
+}
+
+.recuadro-3e {
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  background-color: rgba(29, 45, 68, 0.7);
+
+  img {
+    width: 100%;
+    object-fit: cover;
+    align-items: center;
+    background-color: rgba(29, 45, 68, 0.7);
+  }
+}
+
+/* hasta aca estrellas */
+
+@mixin recuadro-styles {
+  grid-column: 1 / span 3;
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  background-color: rgba(29, 45, 68, 0.7);
+}
+
+.recuadro-1g {
+  @include recuadro-styles;
+  text-align: center;
+}
+
+.recuadro-2g,
+.recuadro-5g,
+.recuadro-7g,
+.recuadro-9g,
+.recuadro-11g {
+  @include recuadro-styles;
+  justify-content: center;
+}
+
+.recuadro-3g {
+  @include recuadro-styles;
+}
+
+/* hasta aca galaxia */
+
+@mixin recuadro-styles {
+  grid-column: 1 / span 3;
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  background-color: rgba(29, 45, 68, 0.7);
+}
+
+.recuadro-1p,
+.recuadro-3p,
+.recuadro-5p,
+.recuadro-7p,
+.recuadro-9p {
+  img {
+    width: 100%;
+    object-fit: cover;
+    align-items: center;
+    background-color: rgba(29, 45, 68, 0.7);
+  }
+}
+
+.recuadro-2p,
+.recuadro-4p,
+.recuadro-6p,
+.recuadro-8p,
+.recuadro-10p {
+  @include recuadro-styles;
+}
+
+/* hasta aca planet */
+
+@mixin recuadro-styles {
+  grid-column: 1 / span 3;
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  background-color: rgba(29, 45, 68, 0.7);
+}
+
+.recuadro-1b,
+.recuadro-3b,
+.recuadro-5b {
+  img {
+    width: 100%;
+    object-fit: cover;
+    align-items: center;
+    background-color: rgba(29, 45, 68, 0.7);
+  }
+}
+
+.recuadro-2b,
+.recuadro-4b,
+.recuadro-6b {
+  @include recuadro-styles;
+}
